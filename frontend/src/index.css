@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --radial-gradient-background: 250, 250, 250;
+    --solid-color-background: 15, 15, 15;
+    --overlay-color: 255, 255, 255;
+}
+
+
+
+.radial-gradient1 {
+    background: radial-gradient(circle at 50% 0%,
+            rgba(var(--radial-gradient-background), 0.05) 0%,
+            transparent 60%) rgba(var(--solid-color-background), 1);
+}
+
+.linear-mask1 {
+    mask-image: linear-gradient(-75deg,
+            white calc(var(--x) + 20%),
+            transparent calc(var(--x) + 30%),
+            white calc(var(--x) + 100%));
+    -webkit-mask-image: linear-gradient(-75deg,
+            white calc(var(--x) + 20%),
+            transparent calc(var(--x) + 30%),
+            white calc(var(--x) + 100%));
+}
+
+.linear-overlay1 {
+    background-image: linear-gradient(-75deg,
+            rgba(var(--overlay-color), 0.1) calc(var(--x) + 20%),
+            rgba(var(--overlay-color), 0.5) calc(var(--x) + 25%),
+            rgba(var(--overlay-color), 0.1) calc(var(--x) + 100%));
+    mask:
+        linear-gradient(black, black) content-box,
+        linear-gradient(black, black);
+    -webkit-mask:
+        linear-gradient(black, black) content-box,
+        linear-gradient(black, black);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+}
+
+@layer utilities {
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+
+    .animation-delay-4000 {
+        animation-delay: 4s;
+    }
+}
