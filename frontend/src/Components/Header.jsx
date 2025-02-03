@@ -11,10 +11,10 @@ export const Header = () => {
   };
 
   return (
-   
-    <nav className="flex font-syne flex-wrap items-center justify-between p-3 bg-green-600 2xl:px-[100px]">
+    <div className='w-full bg-green-600  '>
+    <nav className="flex font-syne flex-wrap items-center container justify-between mx-auto ">
       
-      <div class="flex-shrink-0">
+      <div class="flex items-start ">
         <img src={logo} className="w-40 h-auto sm:w-48"/>
       </div>
 
@@ -84,6 +84,7 @@ export const Header = () => {
         </button>
       </div>
     </nav>
+    </div>
   );
 };
 
