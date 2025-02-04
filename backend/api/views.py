@@ -19,3 +19,9 @@ class TestimonialView(APIView):
         serializer = Testimonial_serializers(settings, many=True)
         return Response(serializer.data)
     
+class FeaturesView(APIView):
+    def get(self, request):
+        features = Features.objects.all()
+        serializer = Features_serializers(features, many=True)
+        return Response(serializer.data)
+    

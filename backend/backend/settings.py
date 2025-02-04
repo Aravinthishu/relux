@@ -134,9 +134,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 JAZZMIN_SETTINGS = {
-    "site_title": "Jayam Insurance",  # Title of the admin site
+    "site_title": "Relux Electric",  # Title of the admin site
     "site_header": "My Admin",  # Header displayed on the admin site
-    "site_brand": "Jayam Insurance and Management",  # Brand name displayed in the admin
+    "site_brand": "Relux",  # Brand name displayed in the admin
     "welcome_sign": "Welcome to the Admin Panel!",  # Welcome message
     "show_ui_builder": True,  # Show UI builder for customization
     "changeform_format": "horizontal",  # Form layout (options: 'vertical', 'horizontal')
@@ -148,13 +148,6 @@ JAZZMIN_SETTINGS = {
         "auth.Group": "fas fa-users",
         "sitesettings.Brand": "fas fa-cogs",  # Custom icon for MyModel in your app
         "sitesettings.Social_links": "fas fa-link",
-        "index.HeroSection": "fas fa-home",
-        "index.AboutSection": "fas fa-info",
-        "index.InsuranceSection": "fas fa-shield-alt",
-        "index.Testimonial": "fas fa-comments",
-        "index.Contact": "fas fa-phone",
-        "index.PartnerLogo": "fas fa-users",
-        "index.Certificate": "fa fa-certificate",
     },
 }
 
