@@ -11,3 +11,8 @@ class Testimonial_serializers(serializers.ModelSerializer):
     class Meta:
         model = Testimonial
         fields = '__all__'
+        
+class Features_serializers(serializers.ModelSerializer):
+    class Meta:
+        model = Features
+        fields = '__all__'
