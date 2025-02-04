@@ -54,8 +54,6 @@ export const Header = () => {
         </button>
       </div>
       <ul className={`w-full font-syne md:w-auto md:flex md:items-center md:space-x-6  mt-5 md:mt-0 ${isOpen ? 'block' : 'hidden'} text-right text-bold`}>
-
-
         <li className="block md:inline-block text-base sm:text-lg md:text-xl  font-semibold text-white hover:underline hover:text-green-900">
           <NavLink to="/">Home</NavLink>
         </li>

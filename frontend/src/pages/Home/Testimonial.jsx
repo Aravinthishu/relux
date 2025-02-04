@@ -23,7 +23,7 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <div className="py-16 bg-white">
+    <div className="py-16 bg-white w-full">
       <h3 className="text-green-600 text-center text-sm uppercase font-semibold">
         Testimonials
       </h3>
@@ -41,11 +41,11 @@ const Testimonial = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         modules={[Pagination, Autoplay]}
-        className="w-full max-w-5xl mx-auto mt-10 px-5"
+        className="w-9/12 h-96 mx-auto mt-10 px-5"
       >
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="border border-green-600 p-6 rounded-md text-center shadow-sm">
+            <div className="border border-green-600  p-6 rounded-md text-center h-48 shadow-sm">
               <span className="text-green-600 text-3xl">“</span>
               <h4 className="text-black font-semibold text-lg mt-2">{item.quote}</h4>
               <p className="text-gray-600 text-sm mt-2">{item.description}</p>
@@ -56,5 +56,5 @@ const Testimonial = () => {
     </div>
   );
 };
-
+  
 export default Testimonial;

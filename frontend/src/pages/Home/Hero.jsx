@@ -4,13 +4,10 @@ import ShinyButton from '../../Components/ShinyButton';
 
 const Hero = () => {
   return (
-<section className="px-4 md:px-6 2xl:px-0 bg-black  min-h-svh flex items-center justify-center relative overflow-hidden">
-  
+<section className="px-4 md:px-6 2xl:px-0 bg-black h-[700px]  flex items-center justify-center relative overflow-hidden">
   <div className="absolute w-[600px] h-[500px] bg-green-500 rounded-full filter blur-3xl opacity-30 -top-32 -left-64"></div>
   <div className="absolute w-[600px] h-[500px] bg-green-500 rounded-full filter blur-3xl opacity-30 bottom-0 -right-32"></div>
-
-
-  <div className="w-full  lg:max-w-10/12 mx-auto flex flex-col md:flex-row md:items-center min-h-screen relative z-10">   
+  <div className="w-full  lg:max-w-10/12 mx-auto flex flex-col md:flex-row md:items-center md:min-h-screen relative z-10">   
     <div className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-baseline gap-6  ">
       <h1 className="font-syne font-bold text-4xl md:text-5xl lg:text-6xl text-white text-center md:text-left">
         Electric Vehicle in Your Journey
@@ -22,10 +19,10 @@ const Hero = () => {
         <ShinyButton className="bg-green-600" />
         <ShinyButton />
       </div>
-    </div>   
+    </div>    
     <div className="w-full md:w-1/2 flex justify-center items-center lg:items-start mt-6 md:mt-0">
       <img
-        className="w-72 sm:w-96 md:w-full lg:w-[500px] xl:w-[700px] max-w-full transition-transform duration-300 hover:scale-105"
+        className="w-72 sm:w-96 md:w-full lg:w-[500px] font-syne xl:w-[700px] max-w-full transition-transform duration-300 hover:scale-105"
         src={hero}
         alt="Electric Vehicle"
       />
