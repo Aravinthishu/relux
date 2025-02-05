@@ -9,7 +9,7 @@ const Hero = () => {
   <div className="absolute w-[600px] h-[500px] bg-green-500 rounded-full filter blur-3xl opacity-30 bottom-0 -right-32"></div>
   <div className="w-full  lg:max-w-10/12 mx-auto flex flex-col md:flex-row md:items-center md:min-h-screen relative z-10">   
     <div className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-baseline gap-6  ">
-      <h1 className="font-syne font-bold text-4xl md:text-5xl lg:text-6xl text-white text-center md:text-left">
+      <h1 className=" font-title font-bold text-4xl md:text-5xl lg:text-6xl text-white text-center md:text-left">
         Electric Vehicle in Your Journey
       </h1>
       <p className="font-syne font-medium text-base lg:text-lg text-white text-center md:text-left  max-w-xl">

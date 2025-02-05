@@ -11,7 +11,7 @@ module.exports = {
           gradientColor: '#43B143', 
         },
         fontFamily: {
-          syne: ['Syne', 'sans-serif'],   
+          title: ['Syne', 'sans-serif'],   
         },
         fontWeight: {
           bodyWeight: '400', 
