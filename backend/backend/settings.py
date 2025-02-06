@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'ckeditor',
+    
     'rest_framework',
     'corsheaders',
     'sitesettings',
@@ -189,5 +193,33 @@ JAZZMIN_UI_TWEAKS = {
         "warning": "btn-warning",
         "danger": "btn-danger",
         "success": "btn-success"
+    }
+}
+
+
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Full',
+        'toolbar_Full': [
+            ['Styles', 'Format', 'Font', 'FontSize'],  # Text styling
+            ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript'],  # Text formatting
+            ['TextColor', 'BGColor'],  # Text and background colors
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'],  # Lists and indentation
+            ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],  # Text alignment
+            ['Link', 'Unlink', 'Anchor'],  # Hyperlink management
+            ['Image', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak'],  # Media and layout
+            ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord'],  # Clipboard functionality
+            ['Undo', 'Redo'],  # Undo and redo
+            ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'],  # Editing tools
+            ['RemoveFormat', 'Source'],  # Code and cleanup
+            ['Maximize', 'ShowBlocks', '-', 'About'],  # View options
+            ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'HiddenField'],  # Form elements
+        ],
+        'extraPlugins': ','.join([
+            'colorbutton', 'justify', 'clipboard', 'table', 'image2', 'uploadimage',  # Additional plugins
+        ]),
+        'removePlugins': 'elementspath',  # Optional: Removes the element path bar
+        'resize_enabled': True,  # Allows resizing of the editor window
     }
 }

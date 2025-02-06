@@ -6,3 +6,4 @@ from .models import *
 admin.site.register(ClientLogo)
 admin.site.register(Testimonial)
 admin.site.register(Features)
+admin.site.register(MissionVision)

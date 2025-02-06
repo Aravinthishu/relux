@@ -14,7 +14,7 @@ export const Header = () => {
     <div className='w-full bg-green-600  '>
     <nav className="flex font-syne flex-wrap items-center container justify-between mx-auto ">
       
-      <div class="flex items-start ">
+      <div className="flex items-start ">
         <img src={logo} className="w-40 h-auto sm:w-48"/>
       </div>
 
@@ -78,7 +78,7 @@ export const Header = () => {
       </ul>
       <div className="hidden md:flex">
         <button>
-          <ShinyButton/>
+          <ShinyButton buttonText="Get Started"/>
         </button>
       </div>
     </nav>

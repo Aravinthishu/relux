@@ -1,12 +1,38 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap');
+@import "tailwindcss";
+
+
+
+p{
+    font-family: 'DM Sans', sans-serif;;
+}
+
+h1, h2, h3, h4 , h5, h6, button{
+    font-family: 'Syne', 'sans-serif';
+}
+
+.bg-primary{
+
+    background-color: #00561e;
+}
+
+.bg-secondary{
+    background-color: #99CC01;
+}
+
+.text-primary{
+    color: #00561e;
+}
+
+.text-secondary{
+    color: #99CC01;
+}
 
 :root {
     --radial-gradient-background: 250, 250, 250;
     --solid-color-background: 15, 15, 15;
     --overlay-color: 255, 255, 255;
 }
-
 
 
 .radial-gradient1 {
@@ -49,4 +75,14 @@
     .animation-delay-4000 {
         animation-delay: 4s;
     }
+}
+
+
+
+/* About */
+/* Add this to your CSS file */
+
+.mission li{
+    display: flex;
+    align-items: center;
 }

@@ -25,3 +25,9 @@ class FeaturesView(APIView):
         serializer = Features_serializers(features, many=True)
         return Response(serializer.data)
     
+class MissionVisionView(APIView):
+    def get(self, request):
+        mission_vision = MissionVision.objects.first()
+        serializer = MissionVision_serializers(mission_vision)
+        return Response(serializer.data)
+        

@@ -16,3 +16,8 @@ class Features_serializers(serializers.ModelSerializer):
     class Meta:
         model = Features
         fields = '__all__'
+        
+class MissionVision_serializers(serializers.ModelSerializer):
+    class Meta:
+        model = MissionVision
+        fields = '__all__'

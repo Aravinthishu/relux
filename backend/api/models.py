@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 
@@ -25,3 +26,11 @@ class Features(models.Model):
     
     def __str__(self):
         return self.title
+    
+class MissionVision(models.Model):
+    mission = models.TextField(blank=True, null=True)
+    vission = models.TextField(blank=True, null=True)
+    values = RichTextField(blank=True, null=True)
+    
+    def __str__(self):
+        return str(self.id)

@@ -16,8 +16,8 @@ const Hero = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean dis placerat.
       </p>
       <div className="flex gap-4">
-        <ShinyButton className="bg-green-600" />
-        <ShinyButton />
+        <ShinyButton buttonText="Download" />
+        <ShinyButton buttonText="Download" />
       </div>
     </div>    
     <div className="w-full md:w-1/2 flex justify-center items-center lg:items-start mt-6 md:mt-0">
